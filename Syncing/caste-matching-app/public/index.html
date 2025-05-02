@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Caste Matching Form</title>
+</head>
+<body>
+  <h1>Submit Your Details</h1>
+  <form action="http://localhost:3000/submit" method="POST" enctype="multipart/form-data">
+    <input type="text" name="name" placeholder="Name" required /><br />
+    <input type="email" name="email" placeholder="Email" required /><br />
+    <input type="file" name="photo" required /><br />
+    <select name="caste" required>
+      <option value="SC">SC</option>
+      <option value="BC">BC</option>
+      <option value="OC">OC</option>
+      <option value="OBC">OBC</option>
+      <option value="Minority">Minority</option>
+    </select><br />
+    <input type="text" name="subCaste" placeholder="Sub Caste" /><br />
+    <input type="text" name="job" placeholder="Job" /><br />
+    <input type="text" name="assets" placeholder="Assets" /><br />
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
